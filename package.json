@@ -1,0 +1,27 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "Blog for the odin project",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon server",
+        "client": "npm run serve --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Matthew Ito",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "concurrently": "^5.1.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.4.0",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.24.0",
+        "mongoose": "^5.9.1",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
